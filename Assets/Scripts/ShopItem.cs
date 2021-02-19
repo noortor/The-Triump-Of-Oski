@@ -26,7 +26,7 @@ public class ShopItem : MonoBehaviour
         if (!isBought) {
             isBought = true;
             LeafManager leafManager = FindObjectOfType<LeafManager>();
-            leafManager.setLeavesPerPunch(leafManager.getLeavesPerPunch()*2);
+            leafManager.setLeavesPerPunch(leafManager.getLeavesPerPunch()*multiplier);
             Debug.Log("bought item");
         } else {
             Debug.Log("cannot buy item again");
