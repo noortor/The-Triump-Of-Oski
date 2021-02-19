@@ -14,8 +14,6 @@ public class ShopItem : MonoBehaviour
     void Start()
     {
         isBought = false;
-        Debug.Log("starting");
-        Debug.Log(isBought);
     }
 
     // Update is called once per frame
@@ -27,9 +25,8 @@ public class ShopItem : MonoBehaviour
         Debug.Log(!isBought);
         if (!isBought) {
             isBought = true;
-            Debug.Log(isBought);
             LeafManager leafManager = FindObjectOfType<LeafManager>();
-            leafManager.leavesPerPunch = 2;
+            leafManager.setLeavesPerPunch(leafManager.getLeavesPerPunch()*2);
             Debug.Log("bought item");
         } else {
             Debug.Log("cannot buy item again");
