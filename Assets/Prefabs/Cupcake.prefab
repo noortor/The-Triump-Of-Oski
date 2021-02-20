@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 50
   multiplier: 8
+  isBought: 0

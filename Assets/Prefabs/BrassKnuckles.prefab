@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 20
   multiplier: 4
+  isBought: 0
 --- !u!212 &5420847352294798245
 SpriteRenderer:
   m_ObjectHideFlags: 0
